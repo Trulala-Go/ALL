@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="#000000">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="300dp"
+         android:visibility="gone"
+         android:background="#0e0da0"
+         android:orientation="vertical"
+         android:id="@+id/liner">
+
+        <LinearLayout
+             android:layout_height="35dp"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:background="#500556">
+
+            <TextView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:layout_marginEnd="50dp"
+                 android:background="#ff0000"
+                 android:gravity="center"
+                 android:textColor="#000000"
+                 android:text="X"
+                 android:id="@+id/keluar" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:src="@drawable/folder_apk"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/apk" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:src="@drawable/folder_sd"
+                 android:id="@+id/sd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:layout_margin="10dp">
+
+            <ScrollView
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent">
+
+                <GridLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:orientation="vertical">
+
+                </GridLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+        <LinearLayout
+             android:layout_height="35dp"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:background="#304000">
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:layout_marginEnd="50dp"
+                 android:src="@drawable/nav"
+                 android:id="@+id/nav" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/baru" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/urut" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/cari" />
+
+        </LinearLayout>
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:background="#afffff"
+             android:layout_margin="5dp"
+             android:textColor="#000000"
+             android:textIsSelectable="true"
+             android:id="@+id/jalur"
+             android:text="/" />
+
+        <LinearLayout
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:visibility="gone"
+             android:gravity="center"
+             android:background="#555555"
+             android:id="@+id/lama">
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/salin" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/potong" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:visibility="gone"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/tempel" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/rename" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/hapus" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:layout_margin="10dp">
+
+            <ScrollView
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent">
+
+                <GridLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:columnCount="3"
+                     android:layout_gravity="center_horizontal"
+                     android:id="@+id/grid">
+
+                </GridLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
